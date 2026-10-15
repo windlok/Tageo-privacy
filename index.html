@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkyTag — Privacy Policy / Gizlilik Politikası</title>
+<meta name="description" content="Privacy policy for the SkyTag NFC automation app by MutaLabs.">
+<style>
+  :root {
+    --ink: #0d1b2a;
+    --ink-soft: #41525f;
+    --line: #d9e2ec;
+    --bg: #ffffff;
+    --bg-soft: #f6f8fb;
+    --accent: #0b4f9e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e8eef5;
+      --ink-soft: #a8b8c8;
+      --line: #2a3947;
+      --bg: #10161d;
+      --bg-soft: #17212b;
+      --accent: #7fb2ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.3rem; margin: 2.75rem 0 .75rem; letter-spacing: -.01em; }
+  h3 { font-size: 1.05rem; margin: 1.75rem 0 .4rem; }
+  p, li { color: var(--ink-soft); }
+  p { margin: .7rem 0; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 2.75rem 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .45rem 0; }
+  code {
+    background: var(--bg-soft); border: 1px solid var(--line); border-radius: 4px;
+    padding: .1rem .35rem; font-size: .9em; word-break: break-word;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--ink); font-weight: 600; background: var(--bg-soft); }
+  td { color: var(--ink-soft); }
+  .meta {
+    background: var(--bg-soft); border: 1px solid var(--line); border-radius: 10px;
+    padding: 1rem 1.15rem; margin: 1.5rem 0 2rem;
+  }
+  .meta dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: .35rem 1rem; }
+  .meta dt { color: var(--ink); font-weight: 600; }
+  .meta dd { margin: 0; color: var(--ink-soft); }
+  .lang-tag {
+    display: inline-block; font-size: .72rem; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--accent); border: 1px solid currentColor; border-radius: 999px;
+    padding: .1rem .6rem; margin-bottom: .9rem;
+  }
+  footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: .88rem; }
+  @media (max-width: 32rem) {
+    body { padding: 1.75rem 1rem 3rem; }
+    h1 { font-size: 1.5rem; }
+    table { font-size: .88rem; }
+    th, td { padding: .5rem .45rem; }
+    .meta dl { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>SkyTag — Privacy Policy / Gizlilik Politikası</h1>
+
+  <div class="meta">
+    <dl>
+      <dt>Developer</dt><dd>MutaLabs</dd>
+      <dt>Contact</dt><dd><a href="mailto:tastay2@gmail.com">tastay2@gmail.com</a></dd>
+      <dt>Last updated</dt><dd>15 October 2026 / 15 Ekim 2026</dd>
+    </dl>
+  </div>
+
+  <p>SkyTag runs entirely on your device. We operate no servers and have no user accounts, so there is no account data for us to hold. This page is the canonical privacy policy for the app, and it is the same text shown under <strong>Settings &rarr; Legal &amp; Privacy &rarr; Privacy Policy</strong> inside the app.</p>
+
+  <hr>
+
+  <span class="lang-tag">English</span>
+
+  <h2>What we store</h2>
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Why</th><th>Where it lives</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>NFC tag templates and their payloads</strong></td>
+        <td>Let you re-use and share your tag definitions</td>
+        <td>Your device's local SQLite database</td>
+      </tr>
+      <tr>
+        <td><strong>Coordinates you attach to a template</strong></td>
+        <td>Scope a tag's behaviour to where it is deployed</td>
+        <td>The same local database, on your device</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>We do <strong>not</strong> collect account information, contacts, photos, microphone data, or advertising identifiers.</p>
+
+  <h2>What leaves your device</h2>
+  <p>SkyTag has no backend, so there is nowhere for us to send your data. Three things can still transmit information, and only when you trigger them:</p>
+  <ol>
+    <li><strong>Geocoding.</strong> When you add a location to a template, your coordinates are passed to the geocoding service provided by your device (Google Play services on Android) so they can be turned into a readable street address. This happens only at that moment. The resulting address is then saved on your device together with the template. We are not involved in this and see none of it.</li>
+    <li><strong>Crash logs.</strong> Some builds have crash reporting enabled. If the app crashes, technical diagnostics may be uploaded so we can identify and fix the fault. These contain no template content and no coordinates.</li>
+    <li><strong>Links and exports you choose.</strong> Opening a <code>tel:</code>, <code>sms:</code> or <code>https:</code> link hands it to another app, and exported <code>.skytag</code> bundles go wherever you send them. We never see them.</li>
+  </ol>
+  <p>If you never add a location and never use the share action, nothing is transmitted at all.</p>
+
+  <h2>Data sharing</h2>
+  <p>We do not sell, rent or trade your data, and we do not share it with advertisers. We do not run ads and we do not embed analytics or advertising SDKs.</p>
+
+  <h2>Data retention and deletion</h2>
+  <ul>
+    <li>Templates, including any coordinates you attached, stay on your device until you delete them.</li>
+    <li>Delete a single template from the tag list, or clear storage / uninstall the app from Android Settings to erase everything.</li>
+    <li>Uninstalling removes the entire local database. Because we keep no server-side copy, there is nothing further to request from us.</li>
+  </ul>
+
+  <h2>Children's privacy</h2>
+  <p>SkyTag is intended for adult and hobbyist audiences aged 13 and over. We do not knowingly collect data from children.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Deny the location permission at any time; location-based features simply stay disabled.</li>
+    <li>Stop using NFC features at any time.</li>
+    <li>Erase all app data by deleting your templates or uninstalling the app.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Questions, corrections or data removal requests: <a href="mailto:tastay2@gmail.com">tastay2@gmail.com</a> (MutaLabs).</p>
+
+  <hr>
+
+  <span class="lang-tag">Türkçe</span>
+
+  <h2>Neleri saklıyoruz</h2>
+  <table>
+    <thead>
+      <tr><th>Veri</th><th>Neden</th><th>Nerede duruyor</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>NFC etiket şablonları ve içerikleri</strong></td>
+        <td>Şablonlarınızı tekrar kullanıp paylaşabilmeniz için</td>
+        <td>Cihazınızdaki yerel SQLite veritabanı</td>
+      </tr>
+      <tr>
+        <td><strong>Şablona eklediğiniz koordinatlar</strong></td>
+        <td>Etiketi yerleştirdiğiniz konuma göre uyarlamak için</td>
+        <td>Aynı yerel veritabanında, cihazınızda</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Hesap bilgisi, rehber, fotoğraf, mikrofon verisi veya reklam kimliği <strong>toplamıyoruz</strong>.</p>
+
+  <h2>Neler cihazınızdan çıkıyor</h2>
+  <p>SkyTag'in sunucusu yok, yani verinizi gönderebileceğimiz bir yer de yok. Yine de üç şey bilgi iletebilir ve yalnızca siz tetiklediğinizde:</p>
+  <ol>
+    <li><strong>Coğrafi kodlama.</strong> Bir şablona konum eklediğinizde koordinatlarınız, okunabilir bir adrese dönüştürülebilmesi için cihazınızın sağladığı coğrafi kodlama servisine (Android'de Google Play servisleri) verilir. Bu yalnızca o anda olur. Oluşan adres ardından şablonla birlikte cihazınıza kaydedilir. Biz bu sürece dâhil değiliz ve hiçbirini görmeyiz.</li>
+    <li><strong>Çökme günlükleri.</strong> Bazı sürümlerde çökme raporlama açıktır. Uygulama çökerse hatayı tespit edip düzeltmek için teknik tanılama verileri yüklenebilir. Bunlar şablon içeriği veya koordinat içermez.</li>
+    <li><strong>Sizin seçtiğiniz bağlantılar ve dışa aktarmalar.</strong> <code>tel:</code>, <code>sms:</code> veya <code>https:</code> bağlantılarını açmak ilgili başka uygulamaya devredilir; dışa aktardığınız <code>.skytag</code> paketleri sizin gönderdiğiniz yere gider. Bunları hiçbir zaman görmeyiz.</li>
+  </ol>
+  <p>Konum eklemezseniz ve paylaşma işlemini kullanmazsanız hiçbir şey iletilmez.</p>
+
+  <h2>Veri paylaşımı</h2>
+  <p>Verilerinizi satmayız, kiralamayız veya takas etmeyiz; reklamverenlerle de paylaşmayız. Reklam çalıştırmayız; analiz ya da reklam SDK'sı gömülü değildir.</p>
+
+  <h2>Veri saklama ve silme</h2>
+  <ul>
+    <li>Şablonlar, eklediğiniz koordinatlar dâhil, siz silene kadar cihazınızda kalır.</li>
+    <li>Tek bir şablonu etiket listesinden silebilir ya da Android Ayarları'ndan depolamayı temizleyebilir / uygulamayı kaldırabilirsiniz.</li>
+    <li>Uygulamayı kaldırmak yerel veritabanının tamamını siler. Sunucu tarafında hiçbir kopya tutmadığımız için bize başka bir şeyin silinmesini rica etmenize gerek yoktur.</li>
+  </ul>
+
+  <h2>Çocukların gizliliği</h2>
+  <p>SkyTag, 13 yaş üstü yetişkin ve amatör kitlelere yöneliktir. Çocuklardan bilerek veri toplamayız.</p>
+
+  <h2>Seçimleriniz</h2>
+  <ul>
+    <li>Konum iznini istediğiniz zaman reddedebilirsiniz; konum özellikleri devre dışı kalır.</li>
+    <li>NFC özelliklerini dilediğiniz zaman bırakabilirsiniz.</li>
+    <li>Şablonlarınızı silerek veya uygulamayı kaldırarak tüm uygulama verilerinizi temizleyebilirsiniz.</li>
+  </ul>
+
+  <h2>İletişim</h2>
+  <p>Sorular, düzeltme veya veri silme talepleri için: <a href="mailto:tastay2@gmail.com">tastay2@gmail.com</a> (MutaLabs).</p>
+
+  <hr>
+
+  <footer>
+    <p><strong>SkyTag</strong> by MutaLabs &middot; <a href="mailto:tastay2@gmail.com">tastay2@gmail.com</a> &middot; Last updated 15 October 2026</p>
+  </footer>
+
+</main>
+</body>
+</html>
